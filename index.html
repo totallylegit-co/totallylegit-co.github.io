@@ -1,28 +1,14 @@
 <html>
 <head>
     <title>Totally Legit Corp.</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="simplegrid.css">
+
     <style>
-        body {
-            text-align: center;
-        }
-
-        h1 {
-            padding: 75px 0px 25px;
-            letter-spacing: 8px;
-            font-size: 72px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        h2 {
-            padding: 25px 0px;
+        h3 {
             font-size: 18px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        p {
-            padding-top: 50px;
-            font-size: 16px;
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -30,16 +16,76 @@
             text-decoration: none;
             color: black;
         }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1 { 
+            letter-spacing: 8px;
+            font-size: 72px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+        }
     </style>
 </head>
+
 <body>
-    <h1>TOTALLY &nbsp; LEGIT</h1>
+    <div class="grid grid-pad">
+        <div class="col-1-1">
+            <div class="content" style="text-align: center;">
+                <h1>TOTALLY &nbsp; LEGIT</h1>
+                <img src="legit.png" />
+            </div>
+        </div>
 
-    <img src="legit.png" />
+        <div class="col-4-12">
+           <div class="content">
+               <h3>Twerking On</h3>
 
-    <h2>New Blog Post: <a href="https://blog.totallylegit.biz/hello/">An Introduction</a></h2>
+               <p><strong>Legit Meetup #1</strong> A gathering of like minds discussing
+                how failure can lead to success.</p>
+                <p>COMING SOON: APRIL 1 2015</p>
+           </div>
+        </div>
 
-    <p>Brooklyn, NY &mdash; <a href="mailto:team@totallylegit.biz">team@totallylegit.biz</a> <!-- &mdash; 1-844-DO-LEGIT --> &mdash; <a href="http://twitter.com/totallylegitbiz">@totallylegitbiz</a> &mdash; </a><a href="http://twerk.careers">Jobs</a></a></p>
+        <div class="col-8-12">
+           <div class="content">
+               <h3>About</h3>
+
+               <p>Totally Legit Corp. is a collection of engineers, hackers, and artists
+                that have joined to work on projects they otherwise could not do for a 
+                day job. (Well not yet at least.) We have a variety of backgrounds including 
+                frontend design, user experience, cat wrangling, and backend engineering.</p>
+
+               <p>We are people with real jobs and no jobs that are working on creative 
+                projects for fun. Totally Legit Corp. is sort of a social club meets angel
+                investment fund meets coworking space.<p>
+
+                <p>Totally Legit Corp. is not hiring. We are building a network of 
+                    like-minded individuals via guerilla hiring strategies. This so
+                    far has involved meetups, unsolicited GIF battles over Twitter,
+                    and "real job" interview hijacking.</p>
+
+                <p><a href="https://blog.totallylegit.biz/">Read more...</a></p>
+           </div>
+
+        </div>
+
+        <div class="col-1-1">
+            <div class="content" style="text-align: center; padding-top: 20px;">
+                 <p>Brooklyn, NY &mdash; 
+                    <a href="mailto:team@totallylegit.biz">team@totallylegit.biz</a> &mdash;
+                    <a href="http://twitter.com/totallylegitbiz">@totallylegitbiz</a> &mdash;
+                    <a href="http://twerk.careers">Careers</a></a>
+                </p>
+            </div>
+        </div>
+    </div>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
